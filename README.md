@@ -1,56 +1,70 @@
 # Employee-Management-System-C++ Console-Application
 This project is a basic Employee Management System developed in C++. It allows users to register, log in as employees, view salary/leave/insurance information, and includes a special admin (boss) interface.
 
-Features
+# Employee Management System – C++ Console Application
 
-✔ User Registration
+This project is a basic **Employee Management System** developed in C++.  
+It includes user registration, employee login, salary/leave/insurance calculations, and a boss (admin) panel.
 
-Employees can register by selecting their employment status (full-time, part-time, intern).
+---
 
-Each user receives a unique personal number used for login.
+## 📝 Features
 
-Registered user information is stored in a .txt file.
+### ✔ User Registration
+- Employees can register by selecting their employment status (full-time, part-time, intern).
+- Each user receives a unique **personal number**.
+- All user data is stored in a `.txt` file.
 
-✔ Employee Login
+### ✔ Employee Login
+Employees can log in using:
+- Personal number  
+- Username  
+- Password  
 
-Employees log in using:
+After logging in, they can:
+- Calculate monthly **salary**
+- View monthly **leave entitlement**
+- Calculate **insurance cost**
 
-Personal number
+All calculations depend on the employee’s status.
 
-Username
+### ✔ Boss Login (Admin Panel)
+- Accessible only with the special personal number **0001**.
+- The boss can:
+  - View all registered employees
+  - See usernames and employee status
+  - Display boss-specific salary, leave, and insurance details
 
-Password
+### ✔ Object-Oriented Structure
+The project uses several classes:
+- `EmployeeInfo` – Handles salary, leave, and insurance calculations  
+- `UserMemory` – Manages user registration and login  
+- `Boss` – Admin-only operations  
+- `MainMenu` – Main menu and navigation  
 
-After logging in, they can choose one of the following operations:
+---
 
-Calculate monthly salary
+## 🛠 Technologies Used
+- C++  
+- File Handling (`fstream`)  
+- Object-Oriented Programming (OOP)
 
-Check monthly leave entitlement
+---
 
-Calculate insurance cost
+## 🚀 How to Run
+1. Compile the program using a C++ compiler (g++, MSVC, etc.).
+2. Run the generated executable.
+3. Use the menu to sign up or log in as an employee/boss.
 
-All calculations are based on the employee's status.
+---
 
-✔ Boss Login
+## 📌 Notes
+- Personal numbers must be remembered; they are required for login.
+- Boss mode is only accessible through the code-defined ID `0001`.
 
-Access is granted only with a special personal number (0001).
+---
 
-The boss can:
+## 📂 File Output
+User data is saved in:
 
-View all registered employees
 
-Display their usernames and employment status
-
-Access boss-specific salary, leave, and insurance calculations
-
-✔ Object-Oriented Design
-
-The system is organized using several classes:
-
-EmployeeInfo — handles salary, leave, and insurance calculations
-
-UserMemory — manages user data, registration, and login
-
-Boss — provides administrator-level features
-
-MainMenu — main interface and menu navigation
