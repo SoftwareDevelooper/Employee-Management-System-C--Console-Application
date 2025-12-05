@@ -62,7 +62,5 @@ The project uses several classes:
 
 ---
 
-## 📂 File Output
-User data is saved in:
 
 
