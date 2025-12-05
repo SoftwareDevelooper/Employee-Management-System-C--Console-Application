@@ -1,6 +1,7 @@
 # Employee-Management-System-C++ Console-Application
 This project is a basic Employee Management System developed in C++. It allows users to register, log in as employees, view salary/leave/insurance information, and includes a special admin (boss) interface.
 Features
+
 ✔ User Registration
 
 Employees can register by selecting their employment status (full-time, part-time, intern).
